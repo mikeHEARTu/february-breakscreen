@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body
+{
+	color:white;
+	background: black;
+	text-transform: uppercase;
+}
+.mySlides 
+{
+	overflow: hidden;
+	font-family: Lato, Helvetica, Calibri, sans-serif;
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left:0;
+	top:0;
+	animation-name:slideIn;
+    animation-duration:1s;
+}
+.imageBG
+{
+	background-size:cover;
+    background-position: center center;
+    position:absolute;
+    left:0;
+    top:0;
+    width:1920px;
+	height:1080px;
+}
+.topThird
+{
+	position: absolute;
+	top:100px;
+	left:100px;
+}
+.profilePic
+{	
+	position: absolute;
+	height: 144px;
+	width:144px;
+	background:	linear-gradient(135deg,#b2bec3,#636e72);
+	background-size:cover;
+	background-position: center center;
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	animation-name:upperThirdIn;
+    animation-duration:1s;
+}
+.titleText
+{
+	position: absolute;
+	height: 144px;
+	line-height: 144px;
+	left: 169px;
+	width: 1550px;
+	font-size: 72px;
+	font-weight: bolder;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	animation-name:upperThirdIn;
+	animation-duration:1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+.lowerThird
+{
+	position:absolute;
+	padding: 0px;
+	left:100px;
+	bottom:0;
+	width: 1820px;
+	height: 200px;
+}
+.textBG
+{
+	position: absolute;
+	z-index: 10;
+	bottom:0px;
+	left:0px;
+	margin: 0;
+	font-size:300px;
+	font-weight:bolder;
+	line-height: 200px;
+	white-space: nowrap;
+	color:rgba(255,255,255,0.5);
+	animation-name:lowerThirdIn;
+    animation-duration:1s;
+}
+.tagBox
+{
+	position: absolute;
+	z-index: 100;
+	right:100px;
+	height:200px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+.tagElement
+{
+	font-size:48px;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	background:	linear-gradient(135deg,#935ff0,#6441a4);
+	height:72px;
+	line-height: 72px;
+	padding: 0 20px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	margin-left:25px;
+	animation-name:lowerThirdIn;
+	animation-duration:1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+.tag2
+{
+	animation-delay: 1s;
+}
+.tag3
+{
+	animation-delay: 1.5s;
+}
+.tag4
+{
+	animation-delay: 2s;
+}
+.adBG
+{
+	background:	linear-gradient(135deg,#ff7675,#d63031);
+}
+.twitterBG
+{
+	background:	linear-gradient(135deg,#67BEF4,#1DA1F2);
+}
+.pcgamingBG
+{
+	background:	linear-gradient(135deg,#636e72,#2d3436);
+}
+.pretzelBG
+{
+	background:	linear-gradient(135deg,#1bb3a3,#0b6174);
+}
+.humbleBG
+{
+	background:	linear-gradient(135deg,#D03F52,#D0011B);
+}
+
+@keyframes slideIn
+{
+    from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+
+@keyframes upperThirdIn
+{
+    from
+	{
+		transform: translateX(100px);
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+
+@keyframes lowerThirdIn
+{
+    from
+	{
+		transform: translateX(-100px);
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
